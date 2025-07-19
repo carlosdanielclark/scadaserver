@@ -1,0 +1,21 @@
+# Archivos y carpetas Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Base de datos local de desarrollo
+db.sqlite3
+
+# Archivos de migraciones compiladas
+migrations/__pycache__/
+monitor/migrations/__pycache__/
+scadaserver/__pycache__/
+monitor/__pycache__/
+
+# Archivos de configuración de VSCode opcionales
+.vscode/
+
+# Entorno virtual (si usas uno)
+env/
+venv/
+ENV/

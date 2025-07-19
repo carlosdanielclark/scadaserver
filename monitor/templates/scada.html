@@ -1,0 +1,36 @@
+{% load static %}
+<!-- templates/scada.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SCADA EROS Web</title>
+  <link rel="stylesheet" href="{% static 'monitor/css/scada.css' %}">
+</head>
+<body>
+  <h1>Monitor Energético EROS</h1>
+  <div id="panel-control">
+      <!-- <button id="manual-read" onclick="conectarYLeer()" aria-busy="false">Conectar y Leer</button> -->
+      <label>
+        <input type="checkbox" id="auto-refresh-toggle" checked>
+        Auto-refresh 5s
+      </label>
+      <span id="estado-conexion" class="conectado">🟢 Conectado</span>
+      <span id="last-update">Última actualización: --:--:--</span>
+  </div>
+  <table id="datos">
+    <thead>
+      <tr>
+        <th>Variable</th>
+        <th>Descripción</th>
+        <th>Valor</th>
+        <th>Unidad</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="{% static 'monitor/js/scada.js' %}"></script>
+</body>
+</html>
+
